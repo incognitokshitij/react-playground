@@ -1,8 +1,18 @@
 import DebounceWithUseEffect from "./debounce";
+import DebounceWithoutUseEffect from "./debounce/debounceWithoutUseEffect";
 import { Routes, Route, Link } from "react-router-dom";
 
 let pages = [
-  { name: "debounce with useEffect", path: "/debounce-with-use-effect", component: DebounceWithUseEffect },
+  {
+    name: "debounce with useEffect",
+    path: "/debounce-with-use-effect",
+    component: DebounceWithUseEffect,
+  },
+  {
+    name: "debounce without use effect",
+    path: "/debounce-without-use-effect",
+    component: DebounceWithoutUseEffect,
+  },
 ];
 
 function Home() {

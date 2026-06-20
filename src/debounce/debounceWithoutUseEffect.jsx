@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
+let timer;
 function debounce(fn, delay) {
-  let timer;
   return function (...args) {
     clearTimeout(timer);
     timer = setTimeout(() => {
@@ -14,20 +13,20 @@ function DebounceWithoutUseEffect() {
   const [text, setText] = useState("");
   const [debouncedText, setDebouncedText] = useState("");
 
-  // create debounced function once
-  //   const handleDebouncedChange = debounce((value) => {
-  //     console.log("debounced:", value);
-  //     setDebouncedText(value);
-  //   }, 2000);
+  // create debounced function once and move timer outside as line 2
+  const handleDebouncedChange = debounce((value) => {
+    console.log("debounced:", value);
+    setDebouncedText(value);
+  }, 2000);
 
-  const handleDebouncedChange = useMemo(
-    () =>
-      debounce((value) => {
-        console.log("debounced:", value);
-        setDebouncedText(value);
-      }, 2000),
-    [],
-  );
+  // const handleDebouncedChange = useMemo(
+  //   () =>
+  //     debounce((value) => {
+  //       console.log("debounced:", value);
+  //       setDebouncedText(value);
+  //     }, 2000),
+  //   [],
+  // );
 
   function handleChange(e) {
     const value = e.target.value;

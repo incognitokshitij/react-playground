@@ -1,6 +1,7 @@
 import DebounceWithUseEffect from "./debounce";
 import DebounceWithoutUseEffect from "./debounce/debounceWithoutUseEffect";
 import { Routes, Route, Link } from "react-router-dom";
+import ThrottleWithUseEffect from "./throttle/index";
 
 let pages = [
   {
@@ -12,6 +13,11 @@ let pages = [
     name: "debounce without use effect",
     path: "/debounce-without-use-effect",
     component: DebounceWithoutUseEffect,
+  },
+  {
+    name: "throttle with use effect",
+    path: "/throttle-with-use-effect",
+    component: ThrottleWithUseEffect,
   },
 ];
 

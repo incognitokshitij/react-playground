@@ -3,6 +3,7 @@ import DebounceWithoutUseEffect from "./debounce/debounceWithoutUseEffect";
 import { Routes, Route, Link } from "react-router-dom";
 import ThrottleWithUseEffect from "./throttle/index";
 import FormWithState from "./form/index";
+import TicTacToe from "./tictactoe/Index";
 let pages = [
   {
     name: "debounce with useEffect",
@@ -23,6 +24,11 @@ let pages = [
     name: "form with state",
     path: "/form-with-state",
     component: FormWithState,
+  },
+  {
+    name: "tic tac toe",
+    path: "/tic-tac-toe",
+    component: TicTacToe,
   },
 ];
 

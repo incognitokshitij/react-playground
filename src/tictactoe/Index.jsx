@@ -21,6 +21,7 @@ function Index() {
                     })}</div>
             </div>
         </div>
+    )
 }
 
 export default Index;

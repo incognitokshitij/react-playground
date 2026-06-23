@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import useTicTacToe from "./useTicTacToe";
 
 function Index() {
   const size = 3;

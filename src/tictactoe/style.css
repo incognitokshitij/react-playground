@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.player-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 400px;
+}
+
+.reset-btn {
+    height: 30px;
+    justify-content: center;
+    padding: 0px 8px;
+    font-size: 12px;
+}
+
+.board {
+    display: grid;
+    justify-content: center;
+
+
+}
+
+.cell {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.disabledCell {
+    cursor: not-allowed;
+}

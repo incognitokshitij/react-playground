@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.content {
+  display: block;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.grid-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-box {
+  display: grid;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.grid-cell.selected {
+  background-color: #4caf50;
+}

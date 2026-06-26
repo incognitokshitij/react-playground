@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css";
 import Grid from "./Grid";
 
-function Grid() {
+function GridBox() {
   return (
     <div className='container'>
             <div className='content'>
@@ -13,4 +13,4 @@ function Grid() {
   )
 }
 
-export default Grid
+export default GridBox

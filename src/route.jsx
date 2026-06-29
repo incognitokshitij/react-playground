@@ -4,7 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import ThrottleWithUseEffect from "./throttle/index";
 import FormWithState from "./form/index";
 import TicTacToe from "./tictactoe/Index";
-import GridLight from "./selectableGrid/Index";
+import SelectableGrid from "./SelectableGrid/index";
+import GridLight from "./GridLight/index";
 let pages = [
   {
     name: "debounce with useEffect",
@@ -34,6 +35,11 @@ let pages = [
   {
     name: "selectable grid",
     path: "/selectable-grid",
+    component: SelectableGrid,
+  },
+  {
+    name: "grid light",
+    path: "/grid-light",
     component: GridLight,
   },
 ];

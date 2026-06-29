@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-view {
+    display: block;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px black solid;
+    width: 240px;
+}
+
+.grid {
+    height: 50px;
+    width: 50px;
+    border: 1px grey solid;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.selected {
+    background-color: green;
+    cursor: not-allowed;
+}

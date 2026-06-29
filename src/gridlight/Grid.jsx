@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import "./style.css";
 
-function GridBox() {
+function GridBox(props) {
   const { row, column } = props;
   const [matrix, setMatrix] = useState([]);
   const [isDragging, setIsDragging] = useState(false);

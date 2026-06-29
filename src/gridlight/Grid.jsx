@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
 function GridBox(props) {
@@ -28,7 +28,43 @@ function GridBox(props) {
     return i >= minRow && i <= maxRow && j >= minCol && j <= maxCol;
   }
 
-  return <div></div>;
+  function handleMouseEnter(cell) {
+    if (isDragging) {
+      setEndCell(cell);
+    }
+  }
+
+  function handleMouseUp() {
+    setIsDragging(false);
+  }
+
+  function handleMouseDown(cell) {
+    setIsDragging(true);
+    setStartCell(cell);
+    setEndCell(cell);
+  }
+
+  return (
+    <div className="grid-container">
+      <div className="grid-box">
+        {matrix.map((row, i) => (
+          <div key={i} className="grid-row">
+            {row.map((cell, j) => (
+              <div
+                key={`${i}-${j}`}
+                className={`grid-cell ${isCellSelected(i, j) ? "selected" : ""}`}
+                onMouseDown={() => handleMouseDown(cell)}
+                onMouseEnter={() => handleMouseEnter(cell)}
+                onMouseUp={handleMouseUp}
+              >
+                {cell.index}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default GridBox;

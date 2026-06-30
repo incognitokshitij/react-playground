@@ -6,6 +6,8 @@ import FormWithState from "./form/index";
 import TicTacToe from "./tictactoe/Index";
 import SelectableGrid from "./SelectableGrid/index";
 import GridLight from "./GridLight/index";
+import NestedCheckBox from "./nestedCheckbox/Index";
+
 let pages = [
   {
     name: "debounce with useEffect",
@@ -41,6 +43,11 @@ let pages = [
     name: "grid light",
     path: "/grid-light",
     component: GridLight,
+  },
+  {
+    name: "nested checkbox",
+    path: "/nested-checkbox",
+    component: NestedCheckBox,
   },
 ];
 

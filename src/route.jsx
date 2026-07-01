@@ -48,6 +48,7 @@ let pages = [
     name: "nested checkbox",
     path: "/nested-checkbox",
     component: NestedCheckBox,
+    hasNestedRoutes: true,
   },
 ];
 
@@ -68,7 +69,11 @@ function RoutesPage() {
     <Routes>
       <Route path="/" element={<Home />} />
       {pages.map((page) => (
-        <Route key={page.name} path={page.path} element={<page.component />} />
+        <Route
+          key={page.name}
+          path={page.hasNestedRoutes ? `${page.path}/*` : page.path}
+          element={<page.component />}
+        />
       ))}
     </Routes>
   );

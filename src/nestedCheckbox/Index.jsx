@@ -5,7 +5,7 @@ import "./style.css";
 const Recursive = lazy(() => import("./recursive/Recursive"));
 const Optimized = lazy(() => import("./optimised/Optimized"));
 
-const Home = () => (
+const List = () => (
   <div className="container">
     <div className="container-view">
       <div className="heading">Nested Checkbox</div>
@@ -19,7 +19,7 @@ function Index() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<List />} />
         <Route path="/recursive" element={<Recursive />} />
         <Route path="/optimized" element={<Optimized />} />
       </Routes>

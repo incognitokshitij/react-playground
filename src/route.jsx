@@ -7,6 +7,7 @@ import TicTacToe from "./tictactoe/Index";
 import SelectableGrid from "./SelectableGrid/index";
 import GridLight from "./GridLight/index";
 import NestedCheckBox from "./nestedCheckbox/Index";
+import AutoComplete from "./autocomplete/Index";
 
 let pages = [
   {
@@ -49,6 +50,11 @@ let pages = [
     path: "/nested-checkbox",
     component: NestedCheckBox,
     hasNestedRoutes: true,
+  },
+  {
+    name: "autocomplete",
+    path: "/autocomplete",
+    component: AutoComplete,
   },
 ];
 

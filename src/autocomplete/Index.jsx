@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 function Index() {
   const list = ["delhi", "delhi1", "delhi2", "blr", "chennai"];
-
   const [cityList, setCityList] = useState(list);
   const [value, setValue] = useState("");
 

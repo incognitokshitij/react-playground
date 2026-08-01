@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 function DebounceWithUseEffect() {
+  //state
   const [text, setText] = useState("");
   const [debounceText, setDebounceText] = useState("");
 
